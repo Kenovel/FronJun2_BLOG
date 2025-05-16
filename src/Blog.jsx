@@ -1,4 +1,4 @@
-import { Header } from './components';
+import { Footer, Header } from './components';
 import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -19,8 +19,6 @@ const Content = styled.div`
 const H2 = styled.h2`
     text-aligin: center;
 `;
-
-const Footer = () => <div>Футер</div>;
 
 export const Blog = () => {
     return (
