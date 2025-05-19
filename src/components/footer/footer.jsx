@@ -18,20 +18,20 @@ const FooterContainer = ({ className }) => {
             });
     }, []);
     return (
-        <div className={className}>
+        <footer className={className}>
             <div>
                 <div>Блог веб-разработчика</div>
                 <div>web@developer.ru</div>
             </div>
             <div>
                 <div>
-                    {city},{' '}{new Date().toLocaleString('ru', { day: 'numeric', month: 'long' })}
+                    {city}, {new Date().toLocaleString('ru', { day: 'numeric', month: 'long' })}
                 </div>
                 <div>
                     {temperature} градусов, {weather}
                 </div>
             </div>
-        </div>
+        </footer>
     );
 };
 
