@@ -83,9 +83,15 @@ const AuthorizationContainer = ({ className }) => {
                 <Input
                     type="text"
                     placeholder="Логин..."
+                    autoComplete="username"
                     {...register('login', { onChange: () => setServerError(null) })}
                 />
-                <Input type="password" placeholder="Пароль..." {...register('password')} />
+                <Input
+                    type="password"
+                    placeholder="Пароль..."
+                    autoComplete="current-password"
+                    {...register('password')}
+                />
                 <Button type="submit" disabled={!!formError}>
                     Авторизоваться
                 </Button>

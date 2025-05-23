@@ -5,7 +5,7 @@ export const useResetForm = (reset) => {
     const store = useStore()
 
     useEffect(() => {
-        let currentWasLogout = useStore.getState().app.wasLogout;
+        let currentWasLogout = store.getState().app.wasLogout;
         return store.subscribe(() => {
             let prevWasLogout = currentWasLogout;
             currentWasLogout = store.getState().app.wasLogout;
