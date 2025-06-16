@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 import { AuthFormError, Button, H2, Input } from '../../components';
 import { Navigate } from 'react-router-dom';
-import { server } from '../../bff/';
+import { server } from '../../bff';
 import { setUser } from '../../actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { useForm } from 'react-hook-form';
@@ -64,6 +64,7 @@ const RegistrationContainer = ({ className }) => {
                 return;
             }
             dispatch(setUser(res));
+            sessionStorage.setItem('userData', JSON.stringify(res));
         });
     };
 

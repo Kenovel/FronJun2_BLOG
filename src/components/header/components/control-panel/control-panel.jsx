@@ -24,6 +24,11 @@ const ContolPanelContainer = ({ className }) => {
     const roleId = useSelector(selectUserRole);
     const session = useSelector(selectUserSesson);
 
+    const onLogout = () => {
+        dispatch(logout(session));
+        sessionStorage.removeItem('userData');
+    };
+
     return (
         <div className={className}>
             <RightAligned>
@@ -39,7 +44,7 @@ const ContolPanelContainer = ({ className }) => {
                             id="fa-sign-out"
                             size="24px"
                             margin="auto 0 auto 10px"
-                            onClick={() => dispatch(logout(session))}
+                            onClick={onLogout}
                         />
                     </>
                 )}
