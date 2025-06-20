@@ -1,4 +1,4 @@
-import { Footer, Header } from './components';
+import { Footer, Header, Modal } from './components';
 import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 import { Authorization, Post, Registration, Users } from './pages';
@@ -21,14 +21,13 @@ const Content = styled.div`
 `;
 
 export const Blog = () => {
-
     const dispatch = useDispatch();
     useLayoutEffect(() => {
         const currentUserDataJSON = sessionStorage.getItem('userData');
 
         if (!currentUserDataJSON) return;
 
-        const currentUserData = JSON.parse(currentUserDataJSON)
+        const currentUserData = JSON.parse(currentUserDataJSON);
 
         dispatch(setUser({ ...currentUserData, roleId: Number(currentUserData.roleId) }));
     }, [dispatch]);
@@ -48,6 +47,7 @@ export const Blog = () => {
                 </Routes>
             </Content>
             <Footer />
+            <Modal />
         </AppColumn>
     );
 };

@@ -98,29 +98,7 @@
       "published_at": "2045-06-29"
     }
   ],
-  "comments": [
-    {
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2057-07-16 16:13",
-      "content": "fdsf",
-      "id": 1
-    },
-    {
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2035-03-14 08:53",
-      "content": "123",
-      "id": 2
-    },
-    {
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2053-02-21 16:35",
-      "content": "",
-      "id": 3
-    }
-  ],
+  "comments": [],
   "sessions": [
     {
       "hash": "0.07488663505677428666729156248038634657859802246094",
@@ -165,6 +143,39 @@
         "roleId": 0
       },
       "id": 4
+    },
+    {
+      "hash": "0.27320335126135031345029346994124352931976318359375",
+      "user": {
+        "id": "001",
+        "login": "kenovel",
+        "password": "qwerty123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": 5
+    },
+    {
+      "hash": "0.34361805500552278225256941368570551276206970214844",
+      "user": {
+        "id": "001",
+        "login": "kenovel",
+        "password": "qwerty123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": 6
+    },
+    {
+      "hash": "0.03074267930718144192780982848489657044410705566406",
+      "user": {
+        "id": "001",
+        "login": "kenovel",
+        "password": "qwerty123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": 7
     }
   ]
 }
