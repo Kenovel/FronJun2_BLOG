@@ -26,11 +26,16 @@ const CommentContainer = ({ className, postId, id, author, publishedAt, content 
             <div className="comment">
                 <div className="information-panel">
                     <div className="author">
-                        <Icon id="fa-user-circle-o" margin="0 10px 0 0" size="18px" />
+                        <Icon
+                            inactive={true}
+                            id="fa-user-circle-o"
+                            margin="0 10px 0 0"
+                            size="18px"
+                        />
                         {author}
                     </div>
                     <div className="publishedAt">
-                        <Icon id="fa-calendar-o" margin="0 10px 0 0" size="18px" />
+                        <Icon inactive={true} id="fa-calendar-o" margin="0 10px 0 0" size="18px" />
                         {publishedAt}
                     </div>
                 </div>
