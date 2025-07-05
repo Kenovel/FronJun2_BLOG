@@ -10,13 +10,14 @@ const AppColumn = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
     width: 1000px;
     min-height: 100%;
-    background-color: #fff;
     margin: 0 auto;
+    background-color: #fff;
 `;
 
-const Content = styled.div`
+const Page = styled.div`
     padding: 120px 0 20px;
 `;
 
@@ -35,9 +36,9 @@ export const Blog = () => {
     return (
         <AppColumn>
             <Header />
-            <Content>
+            <Page>
                 <Routes>
-                    <Route path="/" element={<Main/>} />
+                    <Route path="/" element={<Main />} />
                     <Route path="/login" element={<Authorization />} />
                     <Route path="/register" element={<Registration />} />
                     <Route path="/users" element={<Users />} />
@@ -46,7 +47,7 @@ export const Blog = () => {
                     <Route path="/posts/:id/edit" element={<Post />} />
                     <Route path="*" element={<div>Ошибки</div>} />
                 </Routes>
-            </Content>
+            </Page>
             <Footer />
             <Modal />
         </AppColumn>

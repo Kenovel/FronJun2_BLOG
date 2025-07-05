@@ -88,7 +88,7 @@
       "published_at": "2050-11-17 20:13",
       "title": " новая модель организационной деятельности",
       "content": "fresfse",
-      "id": "yUgp6Ab"
+      "id": "gp6Ab"
     },
     {
       "image_url": "https://fastly.picsum.photos/id/1082/280/150.jpg?hmac=6129NmEG9D5lDePoqL9NTM2r94USv4opLobL3kBQGxI",
@@ -285,6 +285,17 @@
         "roleId": 0
       },
       "id": 13
+    },
+    {
+      "hash": "0.33751110157405628253712848163559101521968841552734",
+      "user": {
+        "id": "001",
+        "login": "kenovel",
+        "password": "qwerty123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": 14
     }
   ]
 }
