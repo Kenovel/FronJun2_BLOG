@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { checkAccess } from '../../../../utils';
 import { ROLE } from '../../../../constants';
 import { selectUserRole } from '../../../../selectors';
+import PropTypes from 'prop-types';
 
 const SpecialPantelContainer = ({ className, id, publishedAt, editButton }) => {
     const dispatch = useDispatch();
@@ -75,3 +76,9 @@ export const SpecialPanel = styled(SpecialPantelContainer)`
         display: flex;
     }
 `;
+
+SpecialPanel.propTypes = {
+    id: PropTypes.string.isRequired,
+    publishedAt: PropTypes.string.isRequired,
+    editButton: PropTypes.node.isRequired,
+};
