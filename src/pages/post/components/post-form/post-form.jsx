@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { savePostAsync } from '../../../../actions';
 import { useServerRequest } from '../../../../hooks';
+import { PROP_TYPE } from '../../../../constants';
 
 const PostFormContainer = ({ className, post: { id, title, imageUrl, content, publishedAt } }) => {
     const dispatch = useDispatch();
@@ -43,13 +44,11 @@ const PostFormContainer = ({ className, post: { id, title, imageUrl, content, pu
             <Input
                 value={imageUrlValue}
                 onChange={onImageChange}
-                defaultValue={imageUrl}
                 placeholder="Изображение..."
             />
             <Input
                 value={titleValue}
                 onChange={onTitleChange}
-                defaultValue={title}
                 placeholder="Заголовок..."
             />
             <SpecialPanel
@@ -83,3 +82,7 @@ export const PostForm = styled(PostFormContainer)`
         white-space: pre-line;
     }
 `;
+
+PostForm.propTypes = {
+    post: PROP_TYPE.POST.isRequired,
+};
