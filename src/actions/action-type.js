@@ -1,0 +1,7 @@
+export const ACTION_TYPE = {
+    OPEN_MODAL: 'OPEN_MODAL',
+    CLOSE_MODAL: 'CLOSE_MODAL',
+    LOGOUT: 'LOGOUT',
+    SET_USER: 'SET_USER',
+    SET_POST_DATA: 'SET_POST_DATA',
+};
